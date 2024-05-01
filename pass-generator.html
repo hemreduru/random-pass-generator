@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayıt Sayfası</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center">Kayıt Ol</h5>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="username" placeholder="Kullanıcı Adı">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="E-posta Adresi">
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <input type="password" class="form-control" id="password" placeholder="Şifre">
+              <div class="input-group-append" onclick="generatePassword()">
+                <span class="input-group-text">
+                  <i id="generate-key" class="fas fa-key" ></i>
+                </span>
+              </div>
+              <div class="input-group-append" id="eye-icon">
+                <span class="input-group-text">
+                  <i class="fas fa-eye" ></i>
+                </span>
+              </div>
+                  
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Kayıt Ol</button>
+        </form>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+    </body>
+    </html>
